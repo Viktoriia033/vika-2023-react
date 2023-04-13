@@ -1,5 +1,4 @@
 import React from 'react';
-// import characComponent from "./characters";
 
 const Character = ({character}) => {
     const {id,name,status,species,gender,image} = character;
@@ -10,7 +9,7 @@ const Character = ({character}) => {
             <div> {status}</div>
             <div> {species}</div>
             <div> {gender}</div>
-          <img scr ={image} alt={name}/>
+          <img src ={image} alt={name}/>
         </div>
     );
 };

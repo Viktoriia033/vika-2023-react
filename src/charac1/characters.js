@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Character from "./characters";
 const Characters = () => {
     const characters = [
         {
@@ -53,7 +53,7 @@ const Characters = () => {
     ];
     return (
         <div>
-            {characters.map(character => <Characters key={characters.id} characters={characters}/>)}
+            {characters.map(character => <Character key={character.id} character={character}/>)}
         </div>
     );
 };
