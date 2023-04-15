@@ -6,7 +6,9 @@ const SpaceX = ({spaceX}) => {
         <div>
             <div>mission_name:{mission_name}</div>
             <div>launch_year: {launch_year}</div>
-            <div>mission_patch_small: {mission_patch_small}</div>
+            <div>
+                <img src={mission_patch_small} alt=""/>
+            </div>
         </div>
     );
 };

@@ -11,7 +11,7 @@ const SpacesX = () => {
     }, [])
     return (
         <div>
-            {spacesX.map((spaceX, index) => <spaceX key={index} SpaceX={SpacesX}/>)}
+            {spacesX.map((spaceX, index) => <SpaceX key={index} spaceX={spaceX}/>)}
 
         </div>
     );
