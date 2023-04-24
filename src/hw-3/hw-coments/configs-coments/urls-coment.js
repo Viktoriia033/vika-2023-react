@@ -1,6 +1,6 @@
 
 
-const baseURLcoment = 'http://jsonplaceholder.typicode.com/comments';
+const baseURLcoment = 'https://jsonplaceholder.typicode.com';
 
 const urlsComent = {
     coments:'/coments'

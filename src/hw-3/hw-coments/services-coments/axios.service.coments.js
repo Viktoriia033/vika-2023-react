@@ -3,7 +3,7 @@ import {baseURLcoment} from "../configs-coments/urls-coment";
 
 
 
-const axiosServiceComents = axios.create({baseURLcoment:baseURLcoment});
+const axiosServiceComents = axios.create({baseURL:baseURLcoment});
 
 export {
     axiosServiceComents
