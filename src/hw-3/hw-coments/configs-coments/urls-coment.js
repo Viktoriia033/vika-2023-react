@@ -3,7 +3,7 @@
 const baseURLcoment = 'https://jsonplaceholder.typicode.com';
 
 const urlsComent = {
-    coments:'/coments'
+    coments:'/comments'
 }
  export {
     baseURLcoment,

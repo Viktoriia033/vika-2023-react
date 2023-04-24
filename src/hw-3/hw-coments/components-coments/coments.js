@@ -5,14 +5,14 @@ import {comentsService} from "../services-coments/coments.service";
 
 const Coments = () => {
     const [coments,setComents]= useState([]);
-    const [AllComents,setAllComets] = useState(null);
+    // const [AllComents,setAllComets] = useState(null);
 
     useEffect(()=> {
         comentsService.getAll().then(value => value.data).then(value => setComents(value))
-    },[AllComents])
+    },[])
     return (
         <div>
-            <ComentsForm setAllComents={setAllComets}/>
+            <ComentsForm setComents={setComents}/>
             <hr/>
             {coments.map(coment=> <Coment key={coment.id} coment={coment}/>)}
         </div>
