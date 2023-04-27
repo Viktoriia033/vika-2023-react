@@ -6,7 +6,7 @@ class Comment extends Component {
         super(props);
     }
     render () {
-        const {postId,id,name,email,body} = this.props.comments;
+        const {postId,id,name,email,body} = this.props.comment;
         return (
             <div>
                 <div>postId: {postId}</div>
