@@ -1,19 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 import {useDispatch, useSelector} from "react-redux";
+import {DEC, RES,INC} from "./redux/action";
 
 function App() {
   let store = useSelector(state => state);
   console.log(store);
     let dispatch = useDispatch();
   const increment = () => {
-dispatch({type:'INC',payload:2});
+dispatch(increment());
   };
   const decrement = () => {
-dispatch({type:'DEC'})
+dispatch(decrement());
   };
     const reset = () => {
-        dispatch({type:'reset'})
+        dispatch({type:RES})
     };
 
     return (
